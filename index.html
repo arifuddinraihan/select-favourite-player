@@ -12,11 +12,6 @@
       height: 80vh;
       object-fit: cover;
     }
-
-    .back-gradient {
-      background-color: ;
-    }
-
     .margin-bottom-div {
       margin-bottom: 25vh;
     }
@@ -149,17 +144,24 @@
         <div class="col-4">
           <div class="d-flex flex-column mb-1">
             <div>Hello</div>
-            <div>
+            <div class="border border-dark mx-5 py-5">
               <h1>Budget</h1>
-              <p>Per Player</p>
-              <input type="number" name="" id="">
-              <button class="btn-primary"></button>
-              <p>Player Expenses $ <span>5000</span></p>
-              <p>Per Player</p>
-              <input type="number" name="" id="">
-              <p>Per Player</p>
-              <input type="number" name="" id="">
-              <button class="btn-primary"></button>
+              <p class="d-inline-block">Per Player</p>
+              <input type="number" name="" id="per-player">
+              <br>
+              <button class="btn btn-primary" id="btn-calculation">Calculate</button>
+              <br>
+              <p class="d-inline-block">Player Expenses $ <span id="player-expenses">5000</span></p>
+              <br>
+              <p class="d-inline-block">Manager</p>
+              <input type="number" name="" id="manager">
+              <br>
+              <p class="d-inline-block">Coach</p>
+              <input type="number" name="" id="coach">
+              <br>
+              <button class="btn btn-primary" id="btn-total-calculation">Calculate Total</button>
+              <br>
+              <p class="d-inline-block">Total $<span>1100</span></p>
             </div>
           </div>
         </div>
@@ -167,6 +169,7 @@
     </section>
   </main>
 
+  <script src="js/budget.js"></script>
   <script src="js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
